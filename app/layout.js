@@ -7,8 +7,15 @@ export const metadata = {
   title: { default: SITE.name + ' – पूजा, पंचांग व मुहूर्त', template: '%s | ' + SITE.short },
   description: 'वैदिक पूजा, कुंडली, विवाह व गृह-प्रवेश मुहूर्त, दैनिक पंचांग और त्योहार कैलेंडर।',
 };
-export const viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: '#12061f' };
-
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  minimumScale: 1,
+  userScalable: false,
+  viewportFit: 'cover',
+  themeColor: '#12061f',
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="hi">
